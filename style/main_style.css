@@ -1,27 +1,93 @@
+body,
+header,
+footer, .menu {
+  display: flex;
+  text-align: center;
+}
 body {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  font: normal 14px "Arial", "Time new Roman", serif;
+  flex-direction: column;
 }
-ul {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
+body,
+header,
+footer {
+  min-width: 100%;
 }
-header, main, section, footer {
-    min-width: 100%;
+header ul {
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 80px;
+
+}
+.menu, footer,
+header, header li  {
+    align-items: center;
+}
+header {
+  position: fixed;
+  height: 50px;
+}
+footer,
+header {
+  background-color: rgb(15, 65, 173);
+}
+footer {
+    height: 120px;
 }
 
-img{
-    width: 20%;
+img {
+  max-width: 50%;
+  border: solid 5px white;
+  border-radius: 100%;
 }
-li {
-    list-style: none;
+header li {
+  list-style: none;
+}
+header li, a:hover, a:active {
     text-decoration: none;
 }
-li:hover {
-    color: blue;
+a:hover {
+  color: blue;
 }
-li:active {
-    color:yellow;
+a:active {
+  color: yellow;
+}
+a, .main {
+  color: white;
+}
+main, .main {
+    height: 150vh;
+}
+.main {
+  background-color: rgb(3, 3, 71);
+  max-width: 30%;
+  float: left;
+  margin: 0 50px;
+  padding: 70px 20px;
+  font-size: 1.2em;
+}
+figcaption {
+  font-size: 1.5em;
+}
+.main div div {
+  margin: 20px 0;
+}
+h3 {
+  border: solid 2px white;
+  border-radius: 20px;
+}
+section {
+    padding: 70px 20px 0 20px;
+}
+section, ul {
+    text-align: start;
+}
+ul{
+    display: block;
+}
+.footermenu {
+    text-align: start;
+}
+.footer{
+    
 }
