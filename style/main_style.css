@@ -1,19 +1,28 @@
 body,
 header,
 footer, .menu {
-  display: flex;
   text-align: center;
+}
+body,
+header,
+footer, .menu, .footer, .social, .social a {
+  display: flex;  
 }
 body {
   font: normal 14px "Arial", "Time new Roman", serif;
-  flex-direction: column;
+}
+body, .footer {
+   flex-direction: column; 
 }
 body,
 header,
 footer {
   min-width: 100%;
 }
-header ul {
+.menu {
+    justify-content: space-between;
+}
+.menu {
   justify-content: space-between;
   width: 100%;
   padding: 5px 80px;
@@ -34,7 +43,6 @@ header {
 footer {
     height: 120px;
 }
-
 img {
   max-width: 50%;
   border: solid 5px white;
@@ -47,12 +55,12 @@ header li, a:hover, a:active {
     text-decoration: none;
 }
 a:hover {
-  color: blue;
+  color: rgb(30, 255, 0);
 }
 a:active {
   color: yellow;
 }
-a, .main {
+a, .main, footer {
   color: white;
 }
 main, .main {
@@ -79,15 +87,26 @@ h3 {
 section {
     padding: 70px 20px 0 20px;
 }
-section, ul {
+section, ul, .footerMenu, .footer {
     text-align: start;
 }
 ul{
     display: block;
 }
-.footermenu {
+.footerMenu {
     text-align: start;
+    flex-grow: 3;
 }
 .footer{
-    
+
+    flex-grow:1;
+}
+.footer, .footerMenu {
+margin: 5px 50px;
+}
+.social div {
+    margin: 5px;
+}
+.fab {
+    font-size
 }
