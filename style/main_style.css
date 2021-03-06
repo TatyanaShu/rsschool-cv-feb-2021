@@ -1,7 +1,27 @@
-/* body {
-    background-color: black;
-} */
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+header, main, section, footer {
+    min-width: 100%;
+}
+
 img{
     width: 20%;
-    
+}
+li {
+    list-style: none;
+    text-decoration: none;
+}
+li:hover {
+    color: blue;
+}
+li:active {
+    color:yellow;
 }
