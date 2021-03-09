@@ -124,7 +124,7 @@
             n = 0;
             let timeView = Math.round(timeCount / (num / step));
             let interval = setInterval(() => {
-            n&lt; num? (n += step): clearInterval(interval);
+            n<num? (n += step): clearInterval(interval);
             numb.innerHTML = n;
             }, timeView);
         }
@@ -173,6 +173,7 @@
                 return false;
             }
         }
+
         function isPhone(userPhone) {
             var pattern = /^(\+\d{3})(\d{2})(\d{3})(\d{2})(\d{2})$/;
             if (userPhone.value.match(pattern)) {
@@ -192,42 +193,30 @@
       </section>
     </main>
     <footer>
-      <div class="rsschool">
-        <div>
-          <a href="https://rs.school/js/"> 
-            <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool">
-          </a>
+        <ul class="footerMenu">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English level</a></li>
+            <li><a href="#example">Example code</a></li>
+        </ul>
+        <div class="footer">
+            <p>My telephone number:
+            <a href="tel:+375298638811"> +375-29-863-88-11</a>
+            </p>
+            <div class="social">
+                <div class="viber">
+                    <a title="Viber" target="_blank" href="viber://chat?number=+375(29)8638811">
+                        <i class="fab fa-viber fa-2x"></i>
+                    </a>
+                </div>
+                <div class="telegram">
+                    <a title="telegram" target="_blank" href="tg://resolve?domain=+375(29)8638811">
+                        <i class="fab fa-telegram fa-2x"></i>
+                    </a>
+                </div> 
+            </div> 
         </div>
-        <div>
-          <p>My GitHub account: </p>
-          <a href="https://github.com/TatyanaShu"> TatyanaShu</a>
-          <p>2021</p>
-        </div>
-      </div>
-      <ul class="footerMenu">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#english">English level</a></li>
-        <li><a href="#example">Example code</a></li>
-      </ul>
-      <div class="footer">
-        <p>My telephone number:
-        <a href="tel:+375298638811"> +375-29-863-88-11</a>
-        </p>
-        <div class="social">
-          <div class="viber">
-            <a title="Viber" target="_blank" href="viber://chat?number=+375(29)8638811">
-              <i class="fab fa-viber fa-2x"></i>
-            </a>
-          </div>
-          <div class="telegram">
-            <a title="telegram" target="_blank" href="tg://resolve?domain=+375(29)8638811">
-              <i class="fab fa-telegram fa-2x"></i>
-            </a>
-          </div> 
-        </div> 
-      </div>
     </footer>
   </body>
 </html>
