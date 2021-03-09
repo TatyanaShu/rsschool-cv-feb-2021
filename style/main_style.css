@@ -5,7 +5,7 @@ footer, .menu {
 }
 body,
 header,
-footer, .menu, .footer, .social, .social a {
+footer, .menu, .footer, .social, .social a, .rsschool {
   display: flex;  
 }
 body {
@@ -19,7 +19,7 @@ header,
 footer {
   min-width: 100%;
 }
-.menu {
+.menu, footer  {
     justify-content: space-between;
 }
 .menu {
@@ -41,9 +41,9 @@ header {
   background-color: rgb(15, 65, 173);
 }
 footer {
-    height: 120px;
+    height: 15vh;
 }
-img {
+figure img {
   max-width: 50%;
   border: solid 5px white;
   border-radius: 100%;
@@ -63,8 +63,11 @@ a:active {
 a, .main, footer {
   color: white;
 }
+body {
+  height: 200vh;
+}
 main, .main {
-    height: 150vh;
+    height: 185vh;
 }
 .main {
   background-color: rgb(3, 3, 71);
@@ -97,16 +100,16 @@ ul{
     text-align: start;
     flex-grow: 3;
 }
-.footer{
-
-    flex-grow:1;
+.footer,.rsschool {
+  flex-grow:1;
 }
-.footer, .footerMenu {
+.footer, .footerMenu, .rsschool {
 margin: 5px 50px;
 }
 .social div {
-    margin: 5px;
+  margin: 5px;
 }
-.fab {
-    font-size
+.rsschool img {
+  width: 50%;
+  
 }
